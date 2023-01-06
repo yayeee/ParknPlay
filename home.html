@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩轉台中</title>
+    <link rel="icon" href="./materials/logo/logo-bluebkg-removebg-preview.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./home.css" type="text/css">
+
+     <!-- jsDelivr -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrapper"><input id="menuExtend" type="checkbox" />
+        <header>
+            <div class="row">
+                <div class="col" id="menubar">
+                    <!-- <a id="logo" href=".">玩轉台中</a> -->
+                    <a id="logo" href=".">
+                        <img style="width: 120px;"
+                            src="./materials/logo/logoWithName-BlueBkg.png" alt="">
+                    </a>
+                    <label id="hamburger" for="menuExtend"><span>Menu</span></label>
+                </div>
+                <div class="col" id="navbar">
+                    <nav>
+                        <a href="javascript:;">找車位</a>
+                        <!-- class="on" -->
+                        <a href="javascript:;">找充電</a>
+                        <a href="javascript:;">聯絡我們</a>
+                        <a href="javascript:;">會員中心</a>
+                        <a href="javascript:;">更多</a>
+                    </nav>
+                    <div id="links">
+                        <a id="info" href="javascript:;" target="_blank"> 
+                        <img src="./materials/icons/icons8-question-mark-48.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- <section>
+            <h1> Pure CSS Menu <span># Responsive</span></h1>
+        </section> -->
+        <div class="row">
+            <div id="weatherSection" class="col-12">
+                <!-- <div id="weatherDetails" class="" style="background-color: rgb(246, 244, 244, 0.2); width:210px; ">
+                    19C
+                </div> -->
+                <div class="">
+                    <div id="weatherDetails">
+                        <!-- <p>台中</p>
+                        <p>19°C</p> -->
+                        <div style="padding-left: 78px; font-size: 40px;">
+                            19°C
+                        </div>
+                        <div style="padding-left: 245px; padding-top: 60px;  font-size: 18px;">
+                            多雲時晴
+                        </div>
+                        <div style="padding-left: 70px; margin-top:-60px; font-size: 12px; justify-content: centers;">
+                            <p>今日最高溫 &nbsp;24°C </p>
+                            <p style="margin-top:-10px;">今日最低溫 &nbsp;15°C</p> 
+                            <p style="margin-top:-10px;">紫外線指數 &nbsp;10</p> 
+                        </div>
+                    </div>
+                    <img id="weatherIcon"
+                        src="./materials/icons/3d_weather_icons/sun/27.png" alt="sun">
+                        <!-- style="width: 120px; opacity: 1; padding-top: 30px; margin-left: 240px;
+                        position: absolute; z-index: 2;" -->
+                </div>
+                <img id="weatherBkg"  
+                    src="./materials/weather/bluesky.jpg" alt="bluesky">
+                <!-- <div id="whiteBlock">
+                </div> -->
+            </div>
+
+
+            <div id="attSection" class="col-12">
+                <div id="attSectionBkg" class="col">
+                    <img src="./materials/specialBkg/whiteMarbleBkg.jpg" alt="whiteMarbleBkg">
+                </div>
+
+
+                <!-- carousel -->
+                <div id="attSectionCrl" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- The slideshow -->
+                    <div id="home_carousel" class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./materials/attractions/att_castle2.jpeg" alt="att_castle2" width="390px">
+                            <div class="carousel-caption">
+                                <p style="padding: 20px 20px 5px 10px;">
+                                    大坑 / 新社古堡
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./materials/attractions/att_ChinMeiPark.jpg" alt="att_ChinMeiPark" width="390px">
+                            <div class="carousel-caption">
+                                <p style="padding: 20px 20px 5px 10px;">
+                                    西區 / 草悟廣場
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./materials/attractions/att_museum3.jpg" alt="att_museum3" width="390px">
+                            <div class="carousel-caption">
+                                <p style="padding: 20px 20px 5px 10px;">
+                                    西區 / 國立科博館
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./materials/attractions/att_outlet.jpeg" alt="att_outlet" width="390px">
+                            <div class="carousel-caption">
+                                <p style="padding: 20px 20px 5px 10px;">
+                                    梧棲 / 三井outlet
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#attSectionCrl" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#attSectionCrl" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <!-- carousel end-->
+
+
+            </div>
+
+            
+
+
+
+
+
+            <div id="goSection" class="col-12">
+                <div id="goWord" class="">
+                    <img style="padding-left: 10px;" 
+                        src="./materials/icons/icon-car-48-2.png" alt=""><br>
+                    <p style="margin-top: 6px;">現在啟程</p>
+                </div>
+                <img id="goBkg"  
+                    src="./materials/goTravel/go-roadtrip5.jpg" alt="go-roadtrip5">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

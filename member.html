@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩轉台中</title>
+    <link rel="icon" href="./materials/logo/logo-bluebkg-removebg-preview.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./member.css" type="text/css">
+    <script src="./member.js"></script>
+
+     <!-- jsDelivr -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrapper"><input id="menuExtend" type="checkbox" />
+        <header>
+            <div class="row">
+                <div class="col" id="menubar">
+                    <!-- <a id="logo" href=".">玩轉台中</a> -->
+                    <a id="logo" href=".">
+                        <img style="width: 115px;"
+                            src="./materials/logo/logo-MemberPage-BlueBkg.PNG" alt="">
+                    </a>
+                    <label id="hamburger" for="menuExtend"><span>Menu</span></label>
+                </div>
+                <div class="col" id="navbar">
+                    <nav>
+                        <a href="javascript:;">找車位</a>
+                        <!-- class="on" -->
+                        <a href="javascript:;">找充電</a>
+                        <a href="javascript:;">聯絡我們</a>
+                        <a href="javascript:;">會員中心</a>
+                        <a href="javascript:;">更多</a>
+                    </nav>
+                    <div id="links">
+                        <a id="info" href="javascript:;" target="_blank"> 
+                        <img src="./materials/icons/icons8-question-mark-48.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+        <div id="memberInfo" class="row">
+            <div id="vipHello" class="col-12">
+                <p>知恩, <span style="font-size: 16px;">您好</span></p>
+                <img style="width: 22px; padding-top: 5px;" src="./materials/icons/oie_rounded_corners.gif" alt="wink gif">
+            </div>
+            <div id="vipCard" class="col-12" style="display: flex; overflow: hidden; color:rgb(43,49,63)">
+                <div class="col-5" style="background-color: rgb(150, 238, 238, 0); height: 100%;">
+                    <img style="border-radius: 50%; margin-top: 20px; width: 100px;" 
+                        src="./materials/members/selfie-IU.png" alt="大頭貼">
+                    <p style="margin-top: 20px; margin-left: 17px; font-size: 13px;
+                        letter-spacing: 0.1em; font-weight: bold;">銀牌會員</p>
+                </div>
+                <div class="col-7" style="background-color: rgba(152, 94, 207, 0); height: 100%;">
+                    <div class="col" style="background-color: rgba(178, 223, 120, 0); height: 100px;
+                        font-size: 14px; letter-spacing: 0.1em; margin-left: -20px;">
+                        <p style="margin-left: 0px; padding-top: 26px;">
+                            <img style="width: 14px;" src="./materials/icons/icons8-user-24.png" alt=""> 
+                            李知恩
+                        </p>
+                        <p style="margin-top: -10px;">
+                            <img style="width: 14px;" src="./materials/icons/icons8-birthday-24.png" alt=""> 
+                            1993/ 05/ 16
+                        </p>
+                        <p style="margin-top: -10px;">
+                            <img style="width: 14px;" src="./materials/icons/icons8-iphone-se-24.png" alt=""> 
+                            0908 288 688
+                        </p>
+                        <p style="margin-top: -10px; font-size: 13px; width:176px; background-color: rgb(215, 234, 250,0);">
+                            <img style="width: 14px;" src="./materials/icons/icons8-envelope-24.png" alt=""> 
+                            singIU25@gmail.com
+                        </p>
+                        <p style="margin-top: 0px;">
+                            <button style="background-color: rgba(43, 49, 63, 0.4); border-radius: 10px; font-size: 12px;">
+                                修改個人資料
+                            </button>
+                        </p>
+                    </div>
+                    <div class="col" id="vipCardLogo" style="background-color: rgba(189, 83, 83, 0);
+                        margin-top: -80px;">
+                        <img style="width: 180px; filter: grayscale(20%) contrast(100%); opacity: 0.2;
+                            margin-left: 40px; margin-top: 45px;"
+                            src="./materials/logo/logo-noBkg.png" alt="">
+                    </div>
+
+                </div>
+                <!-- <div id="vipCardLogo">
+                    <img style="width: 200px; filter: grayscale(20%) contrast(100%); opacity: 0.1;"
+                        src="./materials/logo/logo-noBkg.png" alt="">
+                    
+                </div> -->
+            </div>
+
+        </div>
+
+        <div class="row" style="background-color: rgba(236, 233, 240, 1);
+            height: 55%; min-width: 100%;">
+            <div id="pRecordsTit" class="col" >
+                <div id="parkRecTitle" >
+                    停車記錄查詢
+                </div>
+            </div>
+            <div id="pRecordsCon" class="col" >
+
+
+                <div id="searchRecBy">
+                    <label for="start-date">日期：</label>
+                    <input type="date" id="start-date" name="start-date" 
+                        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                        min="2022-01-20" max="2023-01-19" required />
+                    <input type="date" id="end-date" name="end-date" 
+                        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                        min="2022-01-20" max="2023-01-19" required />
+                    <button id="btn-searchRecByDate">查詢</button>
+                    <button id="btn-editRec">編輯</button>
+                    
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>停車日期</th>
+                            <th>停車場名稱</th>
+                            <th>車輛</th>
+                            <th>評價</th>
+                            <th>備註</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023/01/01</td>
+                            <td>水安宮公有停車場</td>
+                            <td>閃電</td>
+                            <td>★★☆</td>
+                            <td>免費</td>
+                        </tr>
+                        <tr>
+                            <td>2022/10/30</td>
+                            <td>五權立體停車場</td>
+                            <td>麥坤</td>
+                            <td>★☆☆</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/22</td>
+                            <td>國美館停車場</td>
+                            <td>紅寶石</td>
+                            <td>★★★</td>
+                            <td>超讚</td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/09</td>
+                            <td>大進街嘟嘟房</td>
+                            <td>傑尼</td>
+                            <td>★★★</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/07</td>
+                            <td>公益路CityPark</td>
+                            <td>瑪莎</td>
+                            <td>★★☆</td>
+                            <td>免費</td>
+                        </tr>
+                        <tr>
+                            <td>2022/05/18</td>
+                            <td>文心崇德停車場</td>
+                            <td>小ya</td>
+                            <td>★☆☆</td>
+                            <td>拒絕往來</td>
+                        <tr>
+                            <td>2022/10/30</td>
+                            <td>五權立體停車場</td>
+                            <td>麥坤</td>
+                            <td>★☆☆</td>
+                            <td>電梯壞掉</td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/22</td>
+                            <td>國美館停車場</td>
+                            <td></td>
+                            <td>★★★</td>
+                            <td>超讚</td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/09</td>
+                            <td>大進街嘟嘟房</td>
+                            <td>傑尼</td>
+                            <td>★★★</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/07</td>
+                            <td>公益路CityPark</td>
+                            <td>瑪莎</td>
+                            <td>★★☆</td>
+                            <td>算好停</td>
+                        </tr>
+                        <tr>
+                            <td>2022/05/18</td>
+                            <td>文心崇德停車場</td>
+                            <td></td>
+                            <td>★☆☆</td>
+                            <td></td>
+                        <tr>
+                            <td>2022/10/30</td>
+                            <td>五權立體停車場</td>
+                            <td>麥坤</td>
+                            <td>★☆☆</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/22</td>
+                            <td>國美館停車場</td>
+                            <td>紅寶石</td>
+                            <td>★★★</td>
+                            <td>居然免費</td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/09</td>
+                            <td>大進街嘟嘟房</td>
+                            <td>傑尼</td>
+                            <td>★★★</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/07</td>
+                            <td>公益路CityPark</td>
+                            <td>瑪莎</td>
+                            <td>★★☆</td>
+                            <td>免費</td>
+                        </tr>
+                        <tr>
+                            <td>2022/05/18</td>
+                            <td>文心崇德停車場</td>
+                            <td>小ya</td>
+                            <td>★☆☆</td>
+                            <td>等很久</td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/09</td>
+                            <td>大進街嘟嘟房</td>
+                            <td></td>
+                            <td>★★★</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2022/06/07</td>
+                            <td>公益路CityPark</td>
+                            <td>瑪莎</td>
+                            <td>★★☆</td>
+                            <td>居然免費</td>
+                        </tr>
+                        <tr>
+                            <td>2022/05/18</td>
+                            <td>文心崇德停車場</td>
+                            <td>小ya</td>
+                            <td>★☆☆</td>
+                            <td>很貴</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+
+            </div>
+            
+
+        </div>
+    </div>
+
+</body>
+</html>

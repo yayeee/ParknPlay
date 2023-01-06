@@ -1,0 +1,424 @@
+#weatherSection {
+  margin-top: 50px;
+  margin-left: -8px;
+  height: 265px;
+  width: 390px;
+  position: absolute; 
+  z-index: -10;
+  /* box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.5); */
+}
+#weatherDetails {
+  height: 100px;
+  width: 100%;
+  /* background-color: rgba(255,0,0,0.1); */
+  margin-top: 30px;
+  margin-left: 10px;
+  position: absolute; 
+  z-index: 2;
+  color: rgb(249, 239, 225);
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); 
+}
+
+/* #whiteBlock {
+  background-color: white;
+  opacity: 0.3;
+  height: 265px;
+  position: relative;
+  z-index: 1;
+} */
+
+#weatherIcon {
+  width: 120px; 
+  opacity: 1; 
+  padding-top: 30px; 
+  margin-left: 240px;
+  position: absolute; 
+  z-index: 2;
+}
+
+#weatherBkg {
+  height: 285px; 
+  width: 400px; 
+  position: absolute; 
+  z-index: 1;
+  filter: blur(2px) blur(0px) blur(3px) blur(0px);
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 22% 85%, 0% 97%); */
+}
+
+#attSection {
+  /* background-image: url("./materials/weather/cloudy2.jpg"); 
+  /* 設置背景色為透明  
+  background-color: transparent;  
+  background-size: cover;
+  height: 265px;
+  width: 100%;
+  margin-left: -8px; */
+  margin-top: 290px;
+}
+#attSectionBkg {
+  height: 360px; 
+  width: 100%; 
+  position: absolute; 
+  z-index: 5;
+  margin-top: -35px;
+  margin-left: -15px;
+  clip-path: polygon(28% 3%, 100% 10%, 140% 72%, 62% 100%, 0% 75%, 0% 17%);
+}
+#attSectionCrl {
+  width: 100%; 
+  position: absolute; 
+  z-index: 6;
+}
+/* 輪播 */
+/* home-carousel */
+.carousel-inner img {
+  width: 100%;
+  min-width: 390px;
+  /* height: 100%; */
+  height: 305px;
+  filter: grayscale(5%);
+  clip-path: polygon(25% 2%, 100% 10%, 150% 60%, 58% 100%, 0% 75%, 0% 15%);  
+  background-color: transparent;  /* 設置背景色為透明  */
+}
+#home_carousel {
+  display: inline-flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-height: 305px;
+  min-height: 305px;
+}
+.carousel-caption {
+  position: absolute; 
+  margin-left: 150px;
+  margin-bottom: 50px;
+  width: 220px;
+  height: 30px;
+  background-color: rgba(43, 49, 63, 0.5);  
+  color: rgb(0, 0, 0);  
+  font-weight: bold;
+  text-shadow: 2px 3px 20px rgb(0, 0, 0);
+  display: flex;  /* 設置為 flex 布局 */
+  align-items: center;  /* 設置元素在垂直軸置中對齊 */
+  padding: 10px 20px; 
+}
+.carousel-control-prev {
+  position: absolute; 
+  margin-left: -15px;
+}
+.carousel-control-next {
+  position: absolute; 
+  margin-right: 15px;
+}
+
+#goSection {
+  /* background-image: url("./materials/goTravel/go-roadtrip.jpg"); */
+  /* background-size: cover; */
+  height: 268px;
+  width: 390px;
+  position: absolute; 
+  z-index: -9;
+  margin-left: -8px;
+  margin-top:  500px;
+  /* filter: blur(1px) blur(0px) blur(0.5px) blur(0px); */
+}
+
+#goWord {
+  width: 180px; 
+  opacity: 1; 
+  padding-top: 140px; 
+  margin-left: 130px;
+  position: absolute; 
+  z-index: 4;
+  color: rgb(249, 239, 225);
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);  /* 水平偏移 垂直偏移 模糊程度 顏色 */
+}
+
+#goBkg {
+  height: 365px; 
+  width: 400px; 
+  position: absolute; 
+  z-index: 3;
+  filter: blur(1px) blur(0px) blur(0.5px) blur(0px);
+  opacity: 1;
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 22% 85%, 0% 100%); */
+}
+
+
+
+
+
+
+
+/* --- */
+* {
+  box-sizing: border-box;
+}
+/* *,
+*:before,
+*::after {
+  box-sizing: border-box;
+} */
+
+html,body {
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  font: 300 16px/1.2 calibri;
+  color: #222;
+  text-align: center;
+  background: linear-gradient(to right, #b1939d 0%, #a27f9d 25%, #797ab0 50%, #607fb6 75%, #5787af 100%);
+  /* background-color: RGB( 43, 49, 63 ); */
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+input[id="menuExtend"] {
+  display: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  background-color: RGB( 43, 49, 63 );
+}
+
+header .row {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 2vw;
+}
+
+header div,header nav {
+  display: flex;
+}
+
+header .col {
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header #menubar {
+  /* height: 4vw; */
+  min-height: 50px;
+  justify-content: space-between;
+}
+
+header #menubar #logo {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  position: absolute;
+  left: 2%;
+  top:8%;
+}
+
+header #menubar label[for="menuExtend"] {
+  width: 12.5vw;
+  max-width: 60px;
+  min-width: 45px;
+  height: 100%;
+  position: relative;
+}
+
+header #menubar label[for="menuExtend"] span {
+  font-size: 0;
+  width: 42%;
+  height: 4%;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 55%;
+  /* left: 72%; */
+  left: 710%;
+  transform: translate(-50%, -50%);
+}
+
+header #menubar label[for="menuExtend"] span:before,
+header #menubar label[for="menuExtend"] span:after {
+  content: '';
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  transition: transform .2s ease-out, top .2s .2s ease-out;
+}
+
+header #menubar label[for="menuExtend"] span:before {
+  top: -300%;
+}
+
+header #menubar label[for="menuExtend"] span:after {
+  top: 300%;
+}
+
+header #navbar nav a {
+  color: #fff;
+  font-size: 18px;
+  transition: .2s ease-out;
+  justify-content: center;
+  text-align: center;
+}
+
+header #navbar nav a:hover,
+header #navbar nav a.on {
+  color: #c4caff;
+}
+
+header #navbar #links a {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  transition: .2s ease-out;
+}
+
+header #navbar #links a:hover {
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header #navbar #links a img {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header #navbar #links a+a {
+  margin-left: 1rem;
+}
+
+/* section {
+    padding-top: 12em; }
+    section h1 {
+      font-size: 5em;
+      color: #e2e5ff;
+      margin: 0; }
+      section h1 span {
+        color: #d2d7ff;
+        font-size: .4em;
+        font-weight: 100;
+        font-style: italic;
+        display: block; }
+   */
+
+@media (min-width: 1100px) {
+  header>div {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header label[for="menuExtend"] {
+    display: none;
+  }
+
+  header #navbar nav a {
+    margin-left: 1em;
+  }
+
+  header #navbar #links {
+    margin-left: 2.5em;
+  }
+}
+
+@media (max-width: 1099.98px) {
+  html {
+    font-size: 4vw;
+  }
+
+  header>div {
+    flex-direction: column;
+  }
+
+  header #navbar {
+    flex: 1;
+    flex-direction: column;
+    padding: 20vw 10vw;
+    /* padding: 10px 5px; */
+    display: none;
+  }
+
+  header #navbar>* {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header #navbar nav a {
+    margin-bottom: 1em;
+  }
+
+  header #navbar #links a+a {
+    margin-left: 5vw;
+  }
+
+  input[id="menuExtend"]:checked+header {
+    height: 100%;
+    max-height: initial;
+    background: linear-gradient(to right, #b1939d 0%, #a27f9d 25%, #797ab0 50%, #607fb6 75%, #5787af 100%);
+    /* overflow-y: auto; */
+    overflow-y: hidden;
+    /* -webkit-overflow-scrolling: touch; */
+    /* -ms-overflow-style: -ms-autohiding-scrollbar;  */
+  }
+
+  input[id="menuExtend"]:checked+header #menubar #logo {
+    opacity: 0;
+    pointer-events: none;
+    transition: none;
+  }
+
+  input[id="menuExtend"]:checked+header #menubar label[for="menuExtend"] span {
+    background-color: transparent;
+  }
+
+  input[id="menuExtend"]:checked+header #menubar label[for="menuExtend"] span:before,
+  input[id="menuExtend"]:checked+header #menubar label[for="menuExtend"] span:after {
+    top: 0;
+    transition: top .3s ease-out, transform .3s .3s ease-out;
+  }
+
+  input[id="menuExtend"]:checked+header #menubar label[for="menuExtend"] span:before {
+    transform: rotate(45deg);
+  }
+
+  input[id="menuExtend"]:checked+header #menubar label[for="menuExtend"] span:after {
+    transform: rotate(-45deg);
+  }
+
+  input[id="menuExtend"]:checked+header #navbar {
+    display: flex;
+  }
+
+  input[id="menuExtend"]:checked+header #navbar nav {
+    font-size: 1.0rem;
+    flex-direction: column;
+    margin-bottom: 5vh;
+  }
+}
