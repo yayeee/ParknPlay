@@ -1,0 +1,5 @@
+CREATE TABLE `postion`.`favo` (
+  `id` INTEGER UNSIGNED NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
